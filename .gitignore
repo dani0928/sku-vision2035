@@ -1,0 +1,13 @@
+# Claude 내부 파일
+.claude/
+
+# 로컬 개발 서버
+serve.ps1
+
+# 구버전 파일
+vision2035_ebook_v2.html
+book-effect-extracted/
+
+# OS
+.DS_Store
+Thumbs.db
