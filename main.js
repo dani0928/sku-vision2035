@@ -174,7 +174,7 @@ function autoFit() {
   const stage = document.getElementById('stage');
   const sw = stage.clientWidth - 40;
   const sh = stage.clientHeight - 20;
-  const scale = Math.min(sw / FIXED_W, sh / fixedH);
+  const scale = Math.min(sw / FIXED_W, sh / fixedH, 1.0);
   let best = 0;
   ZOOMS.forEach((z, i) => { if (Math.abs(z - scale) < Math.abs(ZOOMS[best] - scale)) best = i; });
   zIdx = best;
