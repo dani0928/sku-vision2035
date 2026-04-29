@@ -8,7 +8,7 @@ let totalPgs = 0;
 let curPg = 0;
 const pageTexts = [];
 let pgW = 500, pgH = 707;
-const FIXED_W = 800;
+const FIXED_W = 1200;
 let fixedH = 734;
 
 /* ══════════════════════════════════════
@@ -174,7 +174,7 @@ function autoFit() {
   const stage = document.getElementById('stage');
   const sw = stage.clientWidth - 40;
   const sh = stage.clientHeight - 20;
-  const scale = Math.min(sw / FIXED_W, sh / fixedH, 1.0);
+  const scale = Math.min(sw / FIXED_W, sh / fixedH);
   let best = 0;
   ZOOMS.forEach((z, i) => { if (Math.abs(z - scale) < Math.abs(ZOOMS[best] - scale)) best = i; });
   zIdx = best;
